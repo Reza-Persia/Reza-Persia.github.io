@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+a{
+    background-color: #2647a9;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    box-shadow: 29px 9px 17.6px 0px rgba(0, 0, 0, 0.25) inset;
+    align-content: center;
+    vertical-align: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.r{ margin-left: -10px;
+    animation: transferm 2s;
+}
+@keyframes transferm {
+    from{
+        transform: translateX(90%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}

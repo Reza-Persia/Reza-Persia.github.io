@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    backdrop-filter: blur(20px);
+    flex-direction: row;
+    display: flex;
+    animation: loading 1s linear forwards ;
+}
+@keyframes loading {
+    from {
+        opacity: 0;
+        transition: ease-in-out 600ms;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.menu{
+    border-right: #252525 solid 1px;
+    width: 200px;
+    HEIGHT: 1130PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-between;
+    gap: 50px;
+    position: sticky;
+    top: 5px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 260px;
+}
+.logo div{
+    background-image: url("../logo.svg");
+    height: 150px;
+    width: 150px;
+    background-size: contain;
+    transition: ease-in-out 600ms;
+}
+.logo div:hover{
+    background-image: url("../logo red.svg");
+    box-shadow: black 4px 10px 10px;
+    border-radius: 50%;
+    background-size: cover;
+    width:170px ;
+    height: 170px;
+}
+.toggle a{
+    font: normal 30px "Poppins" , serif;
+    color: #131313;
+    padding: 20px;
+    text-decoration: none;
+}
+div a:hover{
+    color: #000000;
+
+}
+.toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+.toggle a::after{
+    content: "";
+    display: block;
+    position: revert;
+    width: 0%;
+    height: 3px;
+    background-color: red;
+
+}
+.toggle a:hover::after{
+    width: 100%;
+    transition: ease-in-out 600ms;
+}
+.linkedin{
+    background-image: url("../2959747_employment_business_linkedin_work_icon.png");
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    transition: ease-in-out 600ms;
+}
+.linkedin:hover{
+    background-image: url("../RED_employment_business_linkedin_work_icon.svg");
+    background-size: cover;
+    box-shadow: black 4px 10px 10px;
+    border-radius: 10PX;
+}
+.mainIntroduce{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+
+}
+.mainIntroduce a, h1, h3{
+    font: normal 30px "Poppins" , "Poppins Thin", sans-serif;
+    text-decoration: none;
+    color: #131313;
+}
