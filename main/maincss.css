@@ -1,242 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-* a{
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* a {
+  text-decoration: none;
 }
 @font-face {
-    font-family: NeueMontreal;
-    src: url("NeueMontreal-Light.otf") format("opentype");
-    font-weight: normal;
+  font-family: NeueMontreal;
+  src: url("NeueMontreal-Light.otf") format("opentype");
+  font-weight: normal;
 }
 
-
-body{
-background-image: url("boragradients-gritty-d-02 1.jpg");
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    backdrop-filter: blur(20px);
-    flex-direction: row;
-    display: flex;
+body {
+  background-image: url("boragradients-gritty-d-02 1.jpg");
+  width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  backdrop-filter: blur(20px);
+  flex-direction: row;
+  display: flex;
 }
-.menu{
-    border-right: white solid 1px;
-    width: 200px;
-    HEIGHT: 1130PX;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    justify-content: space-between;
-    gap: 50px;
+.menu {
+  border-right: white solid 1px;
+  width: 200px;
+  height: 1130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  justify-content: space-between;
+  gap: 50px;
 }
-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 260px;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 260px;
 }
-.logo div{
-    background-image: url("logo.svg");
-    height: 150px;
-    width: 150px;
-    background-size: contain;
-    transition: ease-in-out 600ms;
+.logo div {
+  background-image: url("logo.svg");
+  height: 150px;
+  width: 150px;
+  background-size: contain;
+  transition: ease-in-out 600ms;
 }
-.logo div:hover{
-    background-image: url("logo red.svg");
-    box-shadow: black 4px 10px 10px;
-    border-radius: 50%;
+.logo div:hover {
+  background-image: url("logo red.svg");
+  box-shadow: black 4px 10px 10px;
+  border-radius: 50%;
 }
-.toggle a{
-    font: normal 30px "Poppins" , serif;
-    color: #d3d3d3;
-    padding: 20px;
-    text-decoration: none;
+.toggle a {
+  font: normal 30px "Poppins", serif;
+  color: #d3d3d3;
+  padding: 20px;
+  text-decoration: none;
 }
-div a:hover{
-    color: white;
-    text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.61);
-
+div a:hover {
+  color: white;
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.61);
 }
-.toggle{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
+.toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
 }
-.toggle a::after{
-    content: "";
-    display: block;
-    position: revert;
-    width: 0%;
-    height: 3px;
-    background-color: #e3e3e3;
-
+.toggle a::after {
+  content: "";
+  display: block;
+  position: revert;
+  width: 0%;
+  height: 3px;
+  background-color: #e3e3e3;
 }
-.toggle a:hover::after{
-    width: 100%;
-    transition: ease-in-out 600ms;
+.toggle a:hover::after {
+  width: 100%;
+  transition: ease-in-out 600ms;
 }
-.linkedin{
-    background-image: url("2959747_employment_business_linkedin_work_icon.png");
-    height: 50px;
-    width: 50px;
-    background-size: contain;
-    transition: ease-in-out 600ms;
+.linkedin {
+  background-image: url("2959747_employment_business_linkedin_work_icon.png");
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+  transition: ease-in-out 600ms;
 }
-.linkedin:hover{
-    background-image: url("RED_employment_business_linkedin_work_icon.svg");
-    background-size: cover;
-    box-shadow: black 4px 10px 10px;
-    border-radius: 10PX;
+.linkedin:hover {
+  background-image: url("RED_employment_business_linkedin_work_icon.svg");
+  background-size: cover;
+  box-shadow: black 4px 10px 10px;
+  border-radius: 10px;
 }
-.mainIntroduce{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-self: center;
-    justify-content: center;
-    flex-grow: 2;
-    text-align: center;
+.mainIntroduce {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  flex-grow: 2;
+  text-align: center;
 }
-h1{
-    opacity: 0;
-    text-align: center;
-    font: normal 140px "Poppins" , serif;
-    animation: textMovement 2s ease-in-out forwards;
-    color: white;
-    background-size: cover;
-    background-clip: text;
-    margin: 0px;
+h1 {
+  opacity: 0;
+  text-align: center;
+  font: normal 140px "Poppins", serif;
+  animation: textMovement 2s ease-in-out forwards;
+  color: white;
+  background-size: cover;
+  background-clip: text;
+  margin: 0px;
 }
 @keyframes textMovement {
-    from{
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-h2{
+  from {
     opacity: 0;
-    text-align: center;
-    font: normal 100px "Poppins" , serif;
-    animation: textMovementh2-3 2s ease-in-out  forwards;
-    animation-delay: 0.3s;
-    background-size: cover;
-    background-clip: text;
-    margin-bottom: 30px;
-    color: white;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-h3{
-    opacity: 0;
-    text-align: center;
-    font: normal 100px "Poppins" , serif;
-    animation: textMovementh2-3 2s ease-in-out  forwards;
-    animation-delay: 0.6s;
-    background-size: cover;
-    background-clip: text;
-    margin-bottom: 30px;
-    color: white;
-    font-size: 54px;
+h2 {
+  opacity: 0;
+  text-align: center;
+  font: normal 100px "Poppins", serif;
+  animation: textMovementh2-3 2s ease-in-out forwards;
+  animation-delay: 0.3s;
+  background-size: cover;
+  background-clip: text;
+  margin-bottom: 30px;
+  color: white;
+}
+h3 {
+  opacity: 0;
+  text-align: center;
+  font: normal 100px "Poppins", serif;
+  animation: textMovementh2-3 2s ease-in-out forwards;
+  animation-delay: 0.6s;
+  background-size: cover;
+  background-clip: text;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 54px;
 }
 @keyframes textMovementh2-3 {
-    from{
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0%);
-    }
-
-}
-
-.myProjectbox{
+  from {
     opacity: 0;
-    height: 100px;
-    width: 20%;
-    z-index: 1;
-    align-self: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 1px;
-    animation: textMovementh2-3 2s ease-in-out  forwards;
-    animation-delay: 0.9s;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
-.myProject{
-    height: 80px;
-    width: 180px;
-    z-index: 1;
-    align-self: center;
-    display: flex;
-    background: linear-gradient(90deg,  #000000 30%, rgba(220, 220, 220, 0.24) 20%, #0b0808 40%);
-    background-size: 200% 200%;
-    background-position: -40% 0%;
-    border-radius: 10px;
-    font: normal 20px "Poppins" , serif ;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+
+.myProjectbox {
+  opacity: 0;
+  height: 100px;
+  width: 20%;
+  z-index: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1px;
+  animation: textMovementh2-3 2s ease-in-out forwards;
+  animation-delay: 0.9s;
 }
-.myProject:hover{
-    animation: gradientShift 2s ease infinite;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
-
-
+.myProject {
+  height: 80px;
+  width: 180px;
+  z-index: 1;
+  align-self: center;
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    #000000 30%,
+    rgba(220, 220, 220, 0.24) 20%,
+    #0b0808 40%
+  );
+  background-size: 200% 200%;
+  background-position: -40% 0%;
+  border-radius: 10px;
+  font: normal 20px "Poppins", serif;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.myProject:hover {
+  animation: gradientShift 2s ease infinite;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
 }
 @keyframes gradientShift {
-    0% {
-        background-position: -40% 0%;
-        backdrop-filter: blur(20px);
-
-    }
-    100% {
-        background-position: 200% 200%;
-
-    }
+  0% {
+    background-position: -40% 0%;
+    backdrop-filter: blur(20px);
+  }
+  100% {
+    background-position: 200% 200%;
+  }
 }
 
-.SeeMyCv{
-    height: 80px;
-    width: 180px;
-    z-index: 1;
-    align-self: center;
-    display: flex;
-    border-radius: 10px;
-    font: normal 20px "Poppins" , serif ;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-
+.SeeMyCv {
+  height: 80px;
+  width: 180px;
+  z-index: 1;
+  align-self: center;
+  display: flex;
+  border-radius: 10px;
+  font: normal 20px "Poppins", serif;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
-.SeeMyCv::before{
-    content: "";
-    background-image: url("2931171_download_import_save_down_storage_icon.png");
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    background-position: center;
-    display: block;
-    background-repeat: no-repeat;
-    padding-right: 15px;
-    align-items: baseline;
+.SeeMyCv::before {
+  content: "";
+  background-image: url("2931171_download_import_save_down_storage_icon.png");
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  background-repeat: no-repeat;
+  padding-right: 15px;
+  align-items: baseline;
 }
-.SeeMyCv:hover{
-    background-color: black;
-    color: white;
-    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.61);
-    transition: ease-in-out 600ms;
+.SeeMyCv:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+  transition: ease-in-out 600ms;
 }
-.myProjectbox a{
-    color: white;
+.myProjectbox a {
+  color: white;
 }
